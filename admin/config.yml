@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/kegiatan"
+public_folder: "/assets/img/kegiatan"
+
+locale: "id"
+
+collections:
+  - name: "galeri"
+    label: "Galeri Kegiatan"
+    folder: "data/galeri"
+    create: true
+    slug: "{{tahun}}-{{slug}}"
+    fields:
+      - { label: "Judul Kegiatan", name: "title", widget: "string" }
+      - { label: "Deskripsi", name: "desc", widget: "text" }
+      - { label: "Tahun", name: "tahun", widget: "number" }
+      - { label: "Gambar", name: "image", widget: "image" }
+
+  - name: "aspirasi"
+    label: "Aspirasi Masuk"
+    folder: "data/aspirasi"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama", name: "nama", widget: "string" }
+      - { label: "Isi Aspirasi", name: "isi", widget: "text" }

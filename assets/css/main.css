@@ -1,0 +1,37 @@
+.nav-item {
+  position: relative;
+  padding-bottom: 4px;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  color: #d4aa00;
+}
+.nav-item.active {
+  color: #d4aa00;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #d4aa00;
+  padding: 10px 22px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  transition: .2s;
+}
+.btn-primary:hover {
+  opacity: .8;
+}
+
+.btn-outline {
+  border: 2px solid #d4aa00;
+  padding: 10px 22px;
+  border-radius: 8px;
+  color: #d4aa00;
+  font-weight: 600;
+  transition: .2s;
+}
+.btn-outline:hover {
+  background: #d4aa00;
+  color: black;
+}
